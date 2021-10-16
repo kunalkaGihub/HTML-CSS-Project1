@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+    
+    <title> My WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-right"><a href="#Signin">Sign In</a></li>
+            
+<!-- yeh nav bar ka dropdown -->
+<!--javascript:void(0) use kr rhe ushme void 0 ka mtlb page jispe jana h vo undefined h-->
+           <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a> </li>
+            <!--unicodes -->
+        </ul>
+        </nav>
+    
+        
+<!--        video or form wala part-->
+        <div class="container" id="section1-gradient">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftside-col">
+                    <h3 class="large">This is Soni</h3>
+                    <h3 class="large">Front End Developer</h3>
+                    </div>
+                    <form>
+                    <div class="leftside-col">
+                        <h2>Username</h2>
+                        <input class="inputbox" name="username" type="text" placeholder="username">
+                        <h2>Password</h2>
+                        <input class="inputbox" name="password" type="text" placeholder="password">
+                    </div>
+                    </form>
+                </div>  
+                <div class="col-6">
+                    <div class="rightside-col">
+                        <div class="videocontainer">
+                        <iframe width="400" height="215" src="https://www.youtube.com/embed/mQ28n1DkZvo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <header>
+        <h1 class="section2-header">The Standard Of The Soni</h1>
+        </header>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box">
+                       <div class="icon">
+                            <img src="soni.png" height="100px" width="190px">
+                       </div>
+                        <label>Chat With Me</label>
+<!--                        lorem ispum generator-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                       <div class="icon">
+                            <img src="soni.png" height="100px" width="190px">
+                       </div>
+                        <label>Learn To Code</label>
+<!--                        lorem ispum generator-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                       <div class="icon">
+                            <img src="soni.png" height="100px" width="190px">
+                       </div>
+                        <label>Be A Coder</label>
+<!--                        lorem ispum generator-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+            <div class="col-12">
+                <button class="learnmore">Learn More</button>
+            </div>
+            </div>
+        </div>
+        <hr>
+        
+<!--        3 part introduction and image-->
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <article>
+                    <p>My name is <i>KUNAL SONI</i> , i'm from sirohi rajastha. My technical background is I have knowledge of
+					PYTHON-DjANGO , PHP , HTML, CSS ,JAVASCRIPT and BootStrap. My Hobbies are watching TV series, playing Badminton
+					and my Best game is CHESS.</p>
+                    </article>
+                </div>
+            
+                <div class="col-5">
+                    <div class="imageslope">
+                        <img src="kunal.jpg" height="280px" width="320px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!--        footer-->
+        <footer class="footi">
+            <div class="row">
+                <div class="col-3 mobile2">
+                    <h1>Projects</h1>
+                        <ul>
+                            <li>Ticket Booking</li>
+                            <li>My Music</li>
+                            <li>Blogger</li>
+                        </ul>
+                </div>
+                <div class="col-3 mobile2">
+                    <h1>Projects</h1>
+                        <ul>
+                            <li>Ticket Booking</li>
+                            <li>My Music</li>
+                            <li>Blogger</li>
+                        </ul>
+                </div>
+                <div class="col-3 mobile2">
+                    <h1>Projects</h1>
+                        <ul>
+                            <li>Ticket Booking</li>
+                            <li>My Music</li>
+                            <li>Blogger</li>
+                        </ul>
+                </div>
+                <div class="col-3 mobile2">
+                    <h1>Projects</h1>
+                        <ul>
+                            <li>Ticket Booking</li>
+                            <li>My Music</li>
+                            <li>Blogger</li>
+                        </ul>
+                </div>
+            </div>
+        </footer>
+        
+        
+<!--        navbar k liye function--> 
+        <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if(x.className === "topnav"){
+                x.className += " responsive";
+//                appending topnav and responsive
+            }else{
+                x.className = "topnav";
+            }
+        }
+            
+        </script>
+        
+    </body>
+    
+</html>
